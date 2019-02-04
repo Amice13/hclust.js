@@ -103,6 +103,7 @@ Expected outcome:
 ## Alternatives
 
 [hcluster.js](https://github.com/cmpolis/hcluster.js) - Agglomerative Hierarchical Clustering in JavaScript. (that plays nice with d3.js).
+[ml-hclust](https://www.npmjs.com/package/ml-hclust) - Hierarchical clustering algorithms in JavaScript (includes divisive analysis).
 
 ## License
 
