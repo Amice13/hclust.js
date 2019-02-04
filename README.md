@@ -8,8 +8,8 @@ Agglomerative hierarchical clustering for Node JS (no dependencies).
 
 Method can be called by `hclust(arrays, distance, linkage, na)`, where
 
-* arrays - list of arrays to calculate clusters
-* distance - distance measures
+* `arrays` - list of arrays to calculate clusters
+* `distance` - distance measures
 
   * **euclidean** (default) - Eucledian distance, usual distance between the two vectors
   * **maximum** - maximum distance between two components of x and y 
@@ -21,13 +21,13 @@ Method can be called by `hclust(arrays, distance, linkage, na)`, where
   * **pearson** - Pearson correlation based distance
   * **spearman** - Spearman correlation based distance
 
-* linkage - linkage method
+* `linkage` - linkage method
 
   * **single** - Method of single linkage or nearest neighbour. Proximity between two clusters is the proximity between their two closest objects.
   * **complete** - Method of complete linkage or farthest neighbour. Proximity between two clusters is the proximity between their two most distant objects.
   * **average** (default) - Simple average, or method of equilibrious between-group average linkage (WPGMA) is the modified previous. Proximity between two clusters is the arithmetic mean of all the proximities between the objects of one, on one side, and the objects of the other, on the other side; while the subclusters of which each of these two clusters were merged recently have equalized influence on that proximity – even if the subclusters differed in the number of objects.
 
-* na - handling missing data (they must be null)
+* `na` - handling missing data (they must be null)
   
   * **pairwise** (default) - pairwise deletion of missing values
 
@@ -103,6 +103,7 @@ Expected outcome:
 ## Alternatives
 
 [hcluster.js](https://github.com/cmpolis/hcluster.js) - Agglomerative Hierarchical Clustering in JavaScript. (that plays nice with d3.js).
+
 [ml-hclust](https://www.npmjs.com/package/ml-hclust) - Hierarchical clustering algorithms in JavaScript (includes divisive analysis).
 
 ## License
