@@ -6,10 +6,10 @@ Agglomerative hierarchical clustering for Node JS (no dependencies).
 
 ## Parameters
 
-Method can be called by `hclust(arrays, distance, linkage, na)`, where
+Method can be called by `hclust(arrays, distanceType = 'euclidean', linkageType = 'average', na = 'pairwise', arrayMin, arrayMax)`, where
 
 * `arrays` - list of arrays to calculate clusters
-* `distance` - distance measures
+* `distanceType` - distance measures
 
   * **euclidean** (default) - Eucledian distance, usual distance between the two vectors
   * **maximum** - maximum distance between two components of x and y 
@@ -21,7 +21,7 @@ Method can be called by `hclust(arrays, distance, linkage, na)`, where
   * **pearson** - Pearson correlation based distance
   * **spearman** - Spearman correlation based distance
 
-* `linkage` - linkage method
+* `linkageType` - linkage method
 
   * **single** - Method of single linkage or nearest neighbour. Proximity between two clusters is the proximity between their two closest objects.
   * **complete** - Method of complete linkage or farthest neighbour. Proximity between two clusters is the proximity between their two most distant objects.
@@ -31,17 +31,18 @@ Method can be called by `hclust(arrays, distance, linkage, na)`, where
   
   * **pairwise** (default) - pairwise deletion of missing values
 
+* `arrayMin`, `arrayMax` - range or your variable for calculation of percent difference, otherwise their values will be found in data
 
 ## Installation
 
 ```bash
-npm install Amice13/hclust.js --save
+npm install hclust --save
 ```
 
 ## Usage
 
 ```js
-const hclust = require('hclust.js')
+const hclust = require('hclust')
 
 let arrays = [[5,2,1,4,1,6,2], [1,5,3,5,5,6,1], [6,2,7,7,5,6,7], [1,2,3,4,6,6,7]]
 let clusters = hclust(arrays)
