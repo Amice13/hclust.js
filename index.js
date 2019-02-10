@@ -45,4 +45,3 @@ const linkageDistance = {
 }
 
 module.exports = hclust
-console.log(hclust([[1,2,3],[3,2,1], [2, 2, 2]]))
